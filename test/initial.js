@@ -91,7 +91,7 @@ describe('My Little Hero', function () { //define suite title by passing a strin
         });
 
         it('TC-016 Image field  label is present', function (){
-            let label = $('').isDisplayed();
+            let label = $('label[title="5. Upload an image (optional)"]').isDisplayed();
             expect(label).toEqual(true)
         });
 
