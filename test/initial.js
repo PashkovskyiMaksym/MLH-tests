@@ -39,17 +39,17 @@ describe('My Little Hero', function () { //define suite title by passing a strin
         describe('Gender radio buttons', function (){    //define sub-suite title by passing a string
 
             it('TC-006 Gender radio buttons label (he) is present', function (){
-                let label = $$('.ant-form-item-required')[0].isDisplayed();
+                let label = $$('.ant-radio-wrapper')[0].isDisplayed();
                 expect(label).toEqual(true);
             });
 
             it('TC-007 Gender radio buttons label (she) is present', function (){
-                let label = $$('.ant-form-item-required')[1].isDisplayed();
+                let label = $$('.ant-radio-wrapper')[1].isDisplayed();
                 expect(label).toEqual(true);
             });
 
             it('TC-008 Gender radio buttons label (it) is present', function (){
-                let label = $$('.ant-form-item-required')[2].isDisplayed();
+                let label = $$('.ant-radio-wrapper')[2].isDisplayed();
                 expect(label).toEqual(true);
             });
 
