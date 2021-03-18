@@ -36,7 +36,7 @@ describe('My Little Hero', function () { //define suite title by passing a strin
             expect(input).toEqual(true);
         });
 
-        describe('Gender radio buttons', function (){
+        describe('Gender radio buttons', function (){    //define sub-suite title by passing a string
 
             it('TC-006 Gender radio buttons label (he) is present', function (){
                 let label = $$('.ant-form-item-required')[0].isDisplayed();
