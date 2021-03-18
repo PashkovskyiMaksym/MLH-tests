@@ -31,6 +31,45 @@ describe('My Little Hero', function () { //define suite title by passing a strin
             expect(label).toEqual(true);
         });
 
+        it('TC-005 Name field is present', function (){
+            let input= $$('.ant-input')[0].isDisplayed();
+            expect(input).toEqual(true);
+        });
+
+        it('TC-006 Gender radio buttons label is present', function (){       // проверка всех элементов массива
+            let label = $('.ant-radio-wrapper').isDisplayed();
+            expect(label).toEqual(true);
+        });
+
+        it('TC-007 Gender radio buttons  is present', function (){     // проверка всех элементов массива
+            let radioButtons = $('.ant-radio-input').isDisplayed();
+            expect(radioButtons).toEqual(true)
+        });
+
+        it('TC-008 Age field  label is present', function (){
+            let label = $$('.ant-form-item-required')[1].isDisplayed();
+            expect(label).toEqual(true)
+        });
+
+        it('TC-009 Age field  is present', function (){
+            let input= $$('.ant-input')[1].isDisplayed();
+            expect(input).toEqual(true);
+        });
+
+        it('TC-010 Story Type dropdown label is present', function (){
+            let label = $$('.ant-form-item-required')[2].isDisplayed();
+            expect(label).toEqual(true)
+        });
+
+        it('TC-011 Story Type dropdown label is present', function (){
+            let label = $('.ant-select-selection-search-input').isDisplayed();
+            expect(label).toEqual(true)
+        });
+
+
+
+
+
     });
 
 });
