@@ -36,40 +36,74 @@ describe('My Little Hero', function () { //define suite title by passing a strin
             expect(input).toEqual(true);
         });
 
-        it('TC-006 Gender radio buttons label is present', function (){       // проверка всех элементов массива
-            let label = $('.ant-radio-wrapper').isDisplayed();
-            expect(label).toEqual(true);
-        });
+        describe('Gender radio buttons', function (){
 
-        it('TC-007 Gender radio buttons  is present', function (){     // проверка всех элементов массива
-            let radioButtons = $('.ant-radio-input').isDisplayed();
-            expect(radioButtons).toEqual(true)
-        });
+            it('TC-006 Gender radio buttons label (he) is present', function (){
+                let label = $$('.ant-form-item-required')[0].isDisplayed();
+                expect(label).toEqual(true);
+            });
 
-        it('TC-008 Age field  label is present', function (){
-            let label = $$('.ant-form-item-required')[1].isDisplayed();
-            expect(label).toEqual(true)
-        });
+            it('TC-007 Gender radio buttons label (she) is present', function (){
+                let label = $$('.ant-form-item-required')[1].isDisplayed();
+                expect(label).toEqual(true);
+            });
 
-        it('TC-009 Age field  is present', function (){
-            let input= $$('.ant-input')[1].isDisplayed();
-            expect(input).toEqual(true);
-        });
+            it('TC-008 Gender radio buttons label (it) is present', function (){
+                let label = $$('.ant-form-item-required')[2].isDisplayed();
+                expect(label).toEqual(true);
+            });
 
-        it('TC-010 Story Type dropdown label is present', function (){
+            it('TC-009 Gender radio buttons (he) is present', function (){
+                let radioButtons = $$('.ant-radio')[0].isDisplayed();
+                expect(radioButtons).toEqual(true)
+            });
+
+            it('TC-010 Gender radio buttons (she) is present', function (){
+                let radioButtons = $$('.ant-radio')[1].isDisplayed();
+                expect(radioButtons).toEqual(true)
+            });
+
+            it('TC-011 Gender radio buttons (it) is present', function (){
+                let radioButtons = $$('.ant-radio')[2].isDisplayed();
+                expect(radioButtons).toEqual(true)
+            });
+
+        })
+
+        it('TC-012 Age field  label is present', function (){
             let label = $$('.ant-form-item-required')[2].isDisplayed();
             expect(label).toEqual(true)
         });
 
-        it('TC-011 Story Type dropdown label is present', function (){
-            let label = $('.ant-select-selection-search-input').isDisplayed();
+        it('TC-013 Age field  is present', function (){
+            let input= $$('.ant-input')[1].isDisplayed();
+            expect(input).toEqual(true);
+        });
+
+        it('TC-014 Story Type dropdown label is present', function (){
+            let label = $$('.ant-form-item-required')[3].isDisplayed();
             expect(label).toEqual(true)
         });
 
+        it('TC-015 Story Type dropdown is present', function (){
+            let dropdown = $('.ant-select-selector').isDisplayed();
+            expect(dropdown).toEqual(true)
+        });
 
+        it('TC-016 Image field  label is present', function (){
+            let label = $('').isDisplayed();
+            expect(label).toEqual(true)
+        });
 
+        it('TC-017 Image field  is present', function (){
+            let label = $('.ant-upload').isDisplayed();
+            expect(label).toEqual(true)
+        });
 
-
+        it('TC-018 Submit button  is present', function (){
+            let button = $('.ant-btn').isDisplayed();
+            expect(button).toEqual(true)
+        });
     });
 
 });
