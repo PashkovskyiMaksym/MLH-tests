@@ -85,7 +85,7 @@ describe('My Little Hero', function () { //define suite title by passing a strin
             expect(input).toEqual(true);
         });
 
-        it('TC-015 Story Type dropdown label is present', function (){
+        it('TC-015 Story Type  label is present', function (){
             let label = $$('.ant-form-item-required')[3].isDisplayed();
             expect(label).toEqual(true)
         });
