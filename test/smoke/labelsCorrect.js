@@ -4,7 +4,7 @@ import exp from '../../data/expected.json'
 describe('Labels ar correct', function () {
 
     before('Open App', function () {
-            browser.url('');
+        browser.url('');
     });
 
     it('TC-015 Header = My Little Hero', function () {
