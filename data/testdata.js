@@ -1,15 +1,15 @@
 const name = {
-    "default" : "LadyBug"
+    "default": "LadyBug007"
 }
 
 const gender = {
-    "he" : 0,
-    "she" : 1,
-    "it" : 2
+    "he": 0,
+    "she": 1,
+    "it": 2
 }
 
 const age = {
-    "default" : "1234567890"
+    "default": "1234567890"
 }
 
 const story = {

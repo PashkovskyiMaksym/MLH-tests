@@ -1,7 +1,7 @@
- const elements = {
+const elements = {
     "header": "h3",
     "instruction": "p",
-    "requiredLabel": ".ant-form-item-required", // "label[for=name]","label[for=age]","label[for=gender]"
+    "requiredLabel": ".ant-form-item-required",
     "name": "#name",
     "radioButtons": ".ant-radio",
     "radioButtonsLabel": ".ant-radio-wrapper",
@@ -10,8 +10,9 @@
     "storyList": ".ant-select-item",
     "imageLabel": ".ant-form-item-label",
     "image": "span.ant-upload",
-    "submitButton": ".ant-btn",
-    "tryAgain": ".btn-primary"
+    "submit": ".ant-btn",
+    "tryAgain": ".btn-primary",
+    "errorMessage": ".ant-form-item-explain"
 }
 
 module.exports = elements;
